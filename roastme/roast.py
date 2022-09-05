@@ -11,8 +11,10 @@ def create_roast(user_id, roasts_pieces):
     else:
         return f"<@{user_id}> is {adjective}"
 
+
 def formatted_id(user_id):
     return f"<@{user_id}>"
+
 
 def roast_tagged_user(user_id, roasts_full, roasts_pieces):
     craft_roast = getrandbits(1)

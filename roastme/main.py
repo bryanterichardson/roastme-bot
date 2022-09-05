@@ -1,4 +1,5 @@
-import csv, json
+import csv
+import json
 
 from client import TOKEN, RoastMeClient
 
@@ -10,6 +11,7 @@ def load_csv_data(file_path):
         for row in reader:
             roasts.append(row[0])
     return roasts
+
 
 def load_json_data(file_path):
     f = open(file_path, mode='r')
